@@ -143,11 +143,11 @@ a:hover {
   
   text-decoration: none;
   /* background: rgba(255, 255, 255, 0.14); */
-  background: #0e2049;
+  background: #0e204965;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .nav a:hover {
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(0, 255, 255, 0.295);
 }
 
 :root:has(#about:target) .nav a[href="#about"],
@@ -168,6 +168,7 @@ a:hover {
   gap: 12px;
   flex-wrap: wrap;
   font-size: 14px;
+  font-style: italic;
 }
 .social a {
   color: #cffafe;
@@ -275,18 +276,25 @@ a:hover {
 .proj {
   background: var(--card);
   border: 1px solid var(--line);
-  border-color: cyan;
+  /* border-color: cyan; */
   border-radius: 14px;
   padding: 16px;
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transform 0.2s ease,
+  box-shadow 0.2s ease;
   will-change: transform;
+  
 }
 .proj:hover {
-  transform: perspective(600px) rotateX(2deg) rotateY(-20deg) translateY(20px);
-  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.12);
+  transform: perspective(1200px) rotateX(2deg) rotateY(-20deg) translateY(20px);
+  /* box-shadow: 0 14px 30px rgba(2, 6, 23, 0.12); */
+  box-shadow: 0 14px 30px rgba(76, 82, 110, 0.747);
+  border-color: cyan;
+  background-color: #0c1e3b;
+    text-decoration: none;
+
 }
+
 .proj h3 {
   margin: 0 0 6px;
   font-size: 16px;
@@ -337,6 +345,9 @@ a:hover {
 
 .experience-item {
   margin-bottom: var(--space-4);
+  padding: 20px;
+  border: solid rgba(0, 255, 255, 0.356) 1px;
+  border-radius: 15px;
 }
 .experience-item h3 {
   margin: 0 0 4px;
